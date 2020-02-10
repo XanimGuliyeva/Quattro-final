@@ -1,0 +1,778 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  background-color: black;
+}
+
+.header {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1090;
+}
+.header .header-mid {
+  text-align: center;
+}
+.header .header-mid .dropdown {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+}
+.header .header-mid .dropdown:hover .drop-content {
+  visibility: visible;
+  top: 200%;
+}
+.header .header-mid .dropdown .dropbtn {
+  position: relative;
+}
+.header .header-mid .dropdown .dropbtn a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  transition: .3s all ease-in-out;
+}
+.header .header-mid .dropdown .dropbtn a:hover {
+  color: #FF3837;
+}
+.header .header-mid .dropdown .dropbtn i {
+  font-size: 13px;
+}
+.header .header-mid .dropdown .about::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FF3837;
+  bottom: -1px;
+  left: -1px;
+}
+.header .header-mid .dropdown .drop-content {
+  background-color: #1A1A1A;
+  text-align: left;
+  padding: 40px 0;
+  min-width: 230px;
+  position: absolute;
+  top: 220%;
+  left: -30%;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+}
+.header .header-mid .dropdown .drop-content a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding: 8px 0 8px 40px;
+  transition: .3s all;
+}
+.header .header-mid .dropdown .drop-content a:hover {
+  color: #FF3837;
+  transform: translateX(30px);
+}
+.header .shop {
+  position: relative;
+  text-align: right;
+}
+.header .shop i {
+  font-size: 16px;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
+}
+.header .shop i:hover {
+  color: #FF3837;
+}
+.header .shop p {
+  position: absolute;
+  font-size: 8px;
+  border-radius: 50px;
+  padding: 2px 7px;
+  color: white;
+  background-color: #FF3837;
+  top: -9px;
+  right: 0;
+}
+.header .shop .basket {
+  margin-left: 5px;
+}
+
+.header-phone {
+  background-color: #000000;
+  display: none;
+  padding: 10px 0;
+  width: 100%;
+  z-index: 1090;
+}
+.header-phone .shop {
+  text-align: right;
+}
+.header-phone .shop i {
+  font-size: 20px;
+  margin: 0px 10px;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+.header-phone .shop i:hover {
+  color: #FF3837;
+}
+.header-phone .shop .basket {
+  position: relative;
+}
+.header-phone .shop .basket p {
+  position: absolute;
+  font-size: 8px;
+  border-radius: 50px;
+  padding: 2px 7px;
+  color: white;
+  background-color: #FF3837;
+  top: -9px;
+  right: 40px;
+}
+.header-phone .shop .menu {
+  position: relative;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+.header-phone .shop .menu:hover {
+  color: #FF3837;
+}
+.header-phone .shop .menu .inside {
+  z-index: 1090;
+  border-top: 2px solid #FF3837;
+  display: none;
+  position: absolute;
+  background-color: black;
+  top: 180%;
+  width: 680px;
+  right: -50px;
+  color: white;
+  z-index: 999;
+  padding: 10px;
+  text-align: center;
+}
+.header-phone .shop .menu .inside a {
+  outline: none;
+  color: white;
+  font-weight: bold;
+  padding: 13px 0px;
+  padding-left: 150px;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.photo {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2018/11/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0px;
+  position: relative;
+  z-index: -10;
+}
+.photo::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.678) !important;
+}
+.photo .text {
+  position: absolute;
+  z-index: 1090;
+}
+.photo .text h2 {
+  color: white;
+}
+.photo .text a {
+  outline: none;
+  transition: 0.5s;
+  color: #6c757d;
+}
+.photo .text a:hover {
+  color: #ff3837;
+}
+
+.read-more {
+  background-color: #f6f6f7;
+  padding: 50px 20px;
+  transition: 0.2s;
+}
+.read-more .box {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1), 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  background-color: #f6f6f6;
+  padding: 40px 20px;
+  width: 30%;
+}
+.read-more .box h3 {
+  font-size: 16px;
+  color: #000000;
+  margin-top: 30px;
+}
+.read-more .box p {
+  font-size: 14px;
+  color: #5c5c5c;
+  line-height: 25px;
+  margin: 25px 0;
+  padding: 0px 10px;
+}
+.read-more .box .image img {
+  transition: 0.2s;
+}
+.read-more .box:hover {
+  border: 0.5px solid #ff3837;
+}
+.read-more .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.read-more-phone {
+  background-color: #f6f6f7;
+  display: none;
+  padding: 50px 20px;
+  transition: 0.2s;
+}
+.read-more-phone .box {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1), 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  background-color: #f6f6f6;
+}
+.read-more-phone .box h3 {
+  font-size: 16px;
+  color: #000000;
+  margin-top: 30px;
+}
+.read-more-phone .box p {
+  font-size: 14px;
+  color: #5c5c5c;
+  line-height: 25px;
+  margin: 25px 0;
+  padding: 0px 10px;
+}
+.read-more-phone .box .image img {
+  transition: 0.2s;
+}
+.read-more-phone .box:hover {
+  border: 0.5px solid #ff3837;
+}
+.read-more-phone .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.team {
+  padding: 50px;
+  background-color: white !important;
+}
+.team h2 {
+  font-weight: bold;
+}
+.team img {
+  width: 10%;
+}
+.team p {
+  font-size: 14px;
+  color: #5c5c5c;
+  line-height: 25px;
+  margin: 25px 0;
+  padding: 0px 10px;
+}
+
+.team-phone {
+  padding: 50px;
+  display: none;
+  background-color: white !important;
+}
+.team-phone h2 {
+  font-weight: bold;
+}
+.team-phone img {
+  width: 40%;
+}
+.team-phone p {
+  font-size: 14px;
+  color: #5c5c5c;
+  line-height: 25px;
+  margin: 25px 0;
+  padding: 0px 10px;
+}
+
+.teams {
+  padding: 50px 20px;
+}
+.teams .boxs .box {
+  transition: 0.5s;
+  border: 0.5px solid #b3b3b3;
+  position: relative;
+  padding: 70px 20px;
+}
+.teams .boxs .box .image {
+  z-index: 999;
+  position: absolute;
+  width: 35%;
+  left: 33%;
+  top: -20%;
+}
+.teams .boxs .box .image img {
+  border-radius: 50%;
+  width: 100%;
+}
+.teams .boxs .box h2 {
+  color: black;
+}
+.teams .boxs .box span {
+  color: #ff3837;
+}
+.teams .boxs .box p {
+  color: #b3b3b3;
+}
+.teams .boxs .box i {
+  color: #b3b3b3;
+  font-size: 20px;
+  margin: 5px;
+}
+.teams .boxs:hover .box {
+  background-color: #ff3837;
+}
+.teams .boxs:hover .box h2, .teams .boxs:hover .box span, .teams .boxs:hover .box p, .teams .boxs:hover .box i {
+  color: white;
+}
+
+.clients {
+  padding: 40px 0px;
+  background-color: #212121;
+}
+.clients span {
+  color: #b3b3b3;
+}
+.clients h1 {
+  color: white;
+}
+
+.shopp {
+  padding: 50px;
+  background-color: white !important;
+}
+.shopp h2 {
+  font-weight: bold;
+}
+.shopp img {
+  width: 10%;
+}
+.shopp p {
+  font-size: 14px;
+  color: #5c5c5c;
+  line-height: 25px;
+  margin: 25px 0;
+  padding: 0px 10px;
+}
+
+.shopp-phone {
+  padding: 50px;
+  display: none;
+  background-color: white !important;
+}
+.shopp-phone h2 {
+  font-weight: bold;
+}
+.shopp-phone img {
+  width: 40%;
+}
+.shopp-phone p {
+  font-size: 14px;
+  color: #5c5c5c;
+  line-height: 25px;
+  margin: 25px 0;
+  padding: 0px 10px;
+}
+
+.car-store {
+  padding: 20px 0px;
+}
+.car-store .product {
+  transition: 0.9s;
+}
+.car-store .product .box {
+  text-align: center;
+}
+.car-store .product .box img {
+  border: 1px solid black;
+}
+.car-store .product .box .text {
+  padding: 20px 0px;
+  position: relative;
+  text-align: center;
+}
+.car-store .product .box .text .span1 {
+  position: absolute;
+  left: 40%;
+  transition: 0.5s;
+  font-weight: bold;
+  color: black;
+}
+.car-store .product .box .span2 {
+  display: none;
+  border-radius: 10px;
+  position: absolute;
+  left: 35%;
+  bottom: 15%;
+  transition: 0.5s;
+  padding: 10px 10px;
+  color: white;
+  background-color: #ff3837;
+  font-weight: bold;
+}
+.car-store .product .box:hover .span2 {
+  display: block;
+}
+
+.maps {
+  padding: 0;
+}
+
+.readable {
+  padding: 90px 0px;
+  position: relative;
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2019/07/bg5.jpg?id=1923);
+  background-size: cover;
+  background-position: center;
+}
+.readable .arxafon {
+  position: absolute;
+  background-color: black;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.readable .image {
+  margin-top: 10px;
+  position: relative;
+}
+.readable .image .point1 {
+  position: absolute;
+  padding: 5px 10px;
+  background-color: #ff3837;
+  top: 23%;
+  border-radius: 50%;
+  left: 25%;
+  color: white;
+}
+.readable .image .point1 .one {
+  transition: 0.1s;
+  visibility: hidden;
+  position: absolute;
+  min-width: 100px;
+  top: 120%;
+  padding: 5px;
+  left: 40%;
+  background-color: #f7f7f7;
+}
+.readable .image .point1 .one p {
+  font-size: 10px;
+  color: black;
+}
+.readable .image .point1:hover .one {
+  top: 100%;
+  visibility: visible;
+}
+.readable .image .point2 {
+  color: white;
+  position: absolute;
+  padding: 5px 10px;
+  background-color: #ff3837;
+  top: 65%;
+  border-radius: 50%;
+  left: 5%;
+}
+.readable .image .point2 .one {
+  transition: 0.1s;
+  visibility: hidden;
+  position: absolute;
+  min-width: 100px;
+  top: 120%;
+  padding: 5px;
+  left: 40%;
+  background-color: #f7f7f7;
+}
+.readable .image .point2 .one p {
+  font-size: 10px;
+  color: black;
+}
+.readable .image .point2:hover .one {
+  top: 100%;
+  visibility: visible;
+}
+.readable .image .point3 {
+  color: white;
+  position: absolute;
+  padding: 5px 10px;
+  background-color: #ff3837;
+  top: 15%;
+  border-radius: 50%;
+  right: 20%;
+}
+.readable .image .point3 .one {
+  transition: 0.1s;
+  visibility: hidden;
+  position: absolute;
+  min-width: 100px;
+  top: 120%;
+  padding: 5px;
+  left: 40%;
+  background-color: #f7f7f7;
+}
+.readable .image .point3 .one p {
+  font-size: 10px;
+  color: black;
+}
+.readable .image .point3:hover .one {
+  top: 100%;
+  visibility: visible;
+}
+.readable .box p {
+  font-size: 16px;
+  color: #f6f6f7;
+}
+.readable .box h3 {
+  color: white;
+  font-weight: bold;
+}
+.readable .box .boxs i {
+  font-size: 50px;
+  color: #ff3837;
+  padding: 15px;
+}
+.readable .box .boxs span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.readable .box .boxs p p {
+  font-size: 16px;
+  color: #f6f6f7;
+}
+
+.steps {
+  padding: 50px 0px;
+  background-color: #ff3837;
+}
+.steps .box {
+  color: white;
+}
+.steps .box h1 {
+  transition: 0.5s;
+  text-align: center;
+  padding: 20px 25px;
+  border-radius: 50%;
+  background-color: red;
+}
+.steps .box:hover h1 {
+  background-color: #fb7373;
+}
+
+.footer {
+  background-image: url(https://quattro.true-emotions.studio/wp-content/uploads/2018/11/bg8.jpg?id=1927);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 50px 0px;
+}
+.footer::after {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.88) !important;
+}
+.footer .boxs {
+  z-index: 999;
+}
+.footer .boxs .box1 {
+  z-index: 1090;
+  color: white;
+}
+.footer .boxs .box1 p {
+  color: #bbb;
+}
+.footer .boxs .box1 p span {
+  transition: 0.5s;
+}
+.footer .boxs .box1 p span:hover {
+  color: #ff3837;
+}
+.footer .boxs .box1 i {
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: white;
+  margin-right: 10px;
+  background-color: #111111;
+}
+.footer .boxs .box1 i:hover {
+  background-color: #ff3837;
+}
+.footer .boxs .box1 .facebook {
+  padding: 10px 13px;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: white;
+  margin-right: 10px;
+  background-color: #111111;
+}
+.footer .boxs .box1 .facebook:hover {
+  background-color: #ff3837;
+}
+.footer .boxs .box2 {
+  z-index: 1090;
+  color: white;
+}
+.footer .boxs .box2 .small {
+  transition: 0.5s;
+  color: #ffffff;
+  font-size: 12px;
+}
+.footer .boxs .box2 .small:hover {
+  color: #ff3837;
+}
+.footer .boxs .box2 .big {
+  color: #bbb;
+  transition: 0.5s;
+  font-size: 16px;
+}
+.footer .boxs .box2 .big i {
+  color: #ff3837;
+  padding: 0px 2px;
+}
+.footer .boxs .box2 .big:hover {
+  color: #ff3837;
+}
+.footer .boxs .box3 {
+  z-index: 1090;
+  color: white;
+}
+.footer .boxs .box3 input {
+  outline: none;
+  padding: 10px 0px;
+  background-color: transparent;
+  width: 100%;
+  color: #bbb;
+  border: none;
+  border-bottom: 1px solid #bbb;
+}
+.footer .boxs .box3 textarea {
+  outline: none;
+  padding: 10px 0px;
+  background-color: transparent;
+  color: #bbb;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #bbb;
+}
+.footer .boxs .box3 button {
+  text-align: center;
+  padding: 10px 0px;
+  outline: none;
+  padding: 10px 30px;
+  background-color: #ff3837;
+  color: white;
+  margin: 20px 0px;
+  border: none;
+}
+
+.end {
+  background-color: #111111;
+  padding: 20px 0px;
+}
+.end span {
+  color: #bbb;
+  padding-right: 10px;
+}
+
+@media (max-width: 576px) {
+  .header {
+    display: none;
+  }
+
+  .header-phone {
+    display: block;
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  .read-more-phone {
+    display: block;
+  }
+
+  .team {
+    display: none;
+  }
+
+  .team-phone {
+    display: block;
+  }
+
+  .teams .box3 {
+    display: none;
+  }
+  .teams .boxs .box .image {
+    top: -8%;
+    width: 40%;
+  }
+  .teams .boxs .box h2 {
+    font-size: 20px;
+  }
+
+  .clients span, .clients h1, .clients img {
+    display: none;
+  }
+
+  .shopp {
+    display: none;
+  }
+
+  .shopp-phone {
+    display: block;
+  }
+
+  .read-more-phone {
+    display: block;
+  }
+
+  .car-store .product .boxx {
+    display: none;
+  }
+
+  .readable .boxxs .boxs span {
+    font-size: 16px;
+  }
+  .readable .boxxs .box3 {
+    display: none;
+  }
+
+  .end {
+    text-align: center;
+  }
+  .end span {
+    text-align: center;
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
